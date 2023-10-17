@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  header{
+    text-align: center;
+    background-color: orangered;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+    margin: 0px 20px 0px 20px;
+  }
+  
+  main{
+    background-color: whitesmoke;
+    padding: 40px;
+    
+    .Section1{
+       .all-img{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 20px;
+       }
+       
+
+        .sigle-img{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 20px;
+            text-align: center;
+            
+            
+        }
+
+  
+    }
+      
+    }
+
+    @media screen and (max-width:600px) {
+      main{
+        .Section1{
+          .all-img{
+
+              grid-template-columns: repeat(1,1fr);
+            
+          }
+
+        }
+      }
+    }
+
+    @media screen and (min-width:768px) and (max-width:991px) {
+      main{
+        .Section1{
+          .all-img{
+
+              grid-template-columns: repeat(2,1fr);
+            
+          }
+
+        }
+      }
+    }
+  
